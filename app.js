@@ -1,21 +1,21 @@
-let nombres = []; // Esto es un array vacío
+let nombres = []; //Esto es un array vacío
 
 // Función para agregar un amigo
 function agregarAmigo() 
 {
 	const input = document.getElementById('amigo');
 	const nombre = input.value.trim();
-	if (nombre === "")
+	if (nombre === "")//Verifica si el campo está vacío
         {
-        alert("Por favor ingresa un nombre.");
+        alert("El campo no puede estar vacio.");
         return;
         }
-	if (nombres.includes(nombre)) 
+	if (nombres.includes(nombre)) //Verifica si el nombre ya existe
         {
-		alert("Nombre repetido. Por favor ingresa uno diferente.");
+		alert("Nombre ya regristrado. Intente con uno diferente.");
 		return;
 	    }
-	nombres.push(nombre);
+	nombres.push(nombre); //Agrega el nombre al array
 	mostrarNombres();
 	input.value = "";
 }
@@ -28,36 +28,23 @@ function mostrarNombres()
 	nombres.forEach((nombre, index) => {
 		const li = document.createElement('li');
 		li.textContent = nombre;
-
-		// Botón para eliminar
-		const btnEliminar = document.createElement('button');
-		btnEliminar.textContent = ' ❌';
-		btnEliminar.className = 'button-delete';
-		btnEliminar.onclick = () => eliminarAmigo(index);
-		li.appendChild(btnEliminar);
 		lista.appendChild(li);
 	});
 }
-
-// Función para eliminar un amigo
-function eliminarAmigo(index) 
-    {
-	nombres.splice(index, 1);
-	mostrarNombres();
-    }
 
 // Función para mostrar un nombre aleatorio
 function SortearAmigo() 
 {
     const resultado = document.getElementById('resultado');
     resultado.innerHTML = "";
-    if (nombres.length === 0) 
+    if (nombres.length === 0) // Verifica si hay nombres suficientes
         {
-        resultado.innerHTML = '<li>No hay nombres suficientes para sortear.</li>';
+        resultado.innerHTML = '<li>No has ingresado suficientes nombres para sortear.</li>';
         return;
         }
+		// Selecciona un nombre aleatorio
     const indice = Math.floor(Math.random() * nombres.length);
     const nombreSorteado = nombres[indice];
-    resultado.innerHTML = `<li>El amigo secreto es: <strong>${nombreSorteado}</strong></li>`;
+    resultado.innerHTML = `<li>Felicidades tu amigo secreto es: <strong>${nombreSorteado}</strong></li>`;
 }
 

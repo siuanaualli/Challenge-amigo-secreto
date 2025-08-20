@@ -1,27 +1,27 @@
-# Ruleta de Amigo Secreto
+# Sorteo de Amigo Secreto
 
-Un pequeño script web para sortear aleatoriamente un nombre de una lista y elegir a tu "amigo secreto"
-
----
-
-## 📖 Descripción
-Este proyecto es un script web sencillo que permite introducir una lista de nombres y mediante un sorteo aleatorio, seleccionar a uno de ellos. Es ideal para dinámicas como el juego de "Amigo Secreto".
+Aplicación web ligera que facilita la dinámica de seleccionar un participante al azar de entre una lista de nombres.
 
 ---
 
-## 🚀 Uso
-1. Abre el archivo "index.html" en tu navegador.
-2. Escribe una lista de nombres uno a la vez.
-3. Presiona el botón "Sortear" para elegir un nombre al azar.
+## 🌟 Objetivo
+El propósito principal de este proyecto es brindar una herramienta práctica y accesible para realizar sorteos de manera rápida y transparente en actividades sociales o recreativas.
 
 ---
 
-## 🛠️ Requisitos
-- Navegador web moderno (Chrome, Edge, Firefox, Opera).
-- No se requiere instalación ni servidor: funciona localmente en tu computadora.
+## 📋 Instrucciones de uso
+- Abre el archivo HTML en cualquier navegador.
+- Ingresa los nombres de los participantes en el área de texto.
+- Haz clic en el botón de sorteo para obtener un ganador instantáneamente.
 
 ---
 
-## 👤 Autor
-Elaborado por David Hernández
-Discord: 851524314477363261
+## 🔧 Dependencias
+- No requiere instalación de programas adicionales.
+- Compatible con equipos de escritorio y dispositivos móviles.
+
+---
+
+## ✍️ Autora
+Proyecto elaborado por Miztli Jocelyn Meza Hernández.
+Discord: 718596946356469810

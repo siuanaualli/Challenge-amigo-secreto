@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #ad4bfd;
+    --color-primary: #4b5dfd;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
@@ -72,12 +72,6 @@ body {
     text-align: center;
 }
 
-.imgRuleta 
-{
-    width: 200px;   
-    height: 250px;  
-}
-
 /* Contenedores de entrada y botón */
 .input-wrapper {
     display: flex;
@@ -127,15 +121,6 @@ button {
     background-color: var(--color-tertiary);
     color: var(--color-text);
     border-radius: 0 25px 25px 0;
-}
-
-.button-delete {
-  border: none;
-  background: none;
-  color: #d32f2f;
-  cursor: pointer;
-  padding: 0;
-  font-size: 1em;
 }
 
 .button-add:hover {
